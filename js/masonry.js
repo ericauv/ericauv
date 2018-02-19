@@ -56,3 +56,23 @@ var $container = jQuery('#container').masonry({
 $container.imagesLoaded().progress(function() {
 	$container.masonry('layout');
 });
+
+$(document).ready(function(){
+				  $container.masonry('layout');
+				  });
+
+//VIDEO GRID
+
+var $containerVid = jQuery('#container-vid').masonry({
+			//options
+			itemSelector: '.grid-item-vid',
+			columnWidth: '.grid-sizer-vid',
+			percentposition: true,
+			horizontalOrder: true,
+			gutter:10
+		});
+		
+
+$(document).ready(function(){
+				  $containerVid.masonry('layout');
+				  });

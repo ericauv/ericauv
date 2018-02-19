@@ -4,31 +4,49 @@
 * { box-sizing: border-box; }
 
 
+body{
+	padding-top: 70px;
+}
+
 /* MASONRY GRID */
 .masonry-grid:after{
 	content: '';
 	display: block;
 	clear: both;
 }
-#container{
+#container, #container-vid{
 	background-color: #FFF;
 }
 
 .grid-sizer,
-.grid-item{
-	width:32%;
+.grid-item,
+.grid-sizer-vid,
+.grid-item-vid{
+	width: 32%;
+}
+
+.grid-item, .grid-item-vid{
+	float: left;
 }
 
 .grid-item{
-	float: left;
 	margin-bottom:5px;
 }
 
+.grid-item-vid{
+	margin-bottom:20px;
+}
 .grid-item img,p{
 	max-width: 100%;
 	display: block;
 }
+
+.grid-item-vid video{
+	max-width: 100%;
+	display:block;
+}
  
+
 
 
 /*
