@@ -9,12 +9,14 @@
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/bootstrap.js"></script>
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+
 </head>
 	
 <body>
@@ -27,7 +29,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="topFixedNavbar1">
       <ul class="nav navbar-nav" id="navbarID">
-        <li><a href="index.html">home</a></li>
+        <li class="active"><a href="index.html">design</a></li>
         <li><a href="gif_gallery.html">gifs</a></li>
 		  <li><a href="multimedia.html">multimedia</a></li>
       </ul>
@@ -36,6 +38,7 @@
   </div>
   <!-- /.container-fluid -->
 </nav>
+<!-- bio
 <div class="panel panel-default">
 	  <div class="panel-heading">
 	    <h3 class="panel-title">About Me</h3>
@@ -43,16 +46,57 @@
 	  <div class="panel-body">Hello, I am a recent Geotechnical/Structural Engineering graduate with a passion for photography, motion graphics, design, and VBA scripts. Feel free to contact me with any inquiries at <a href="mailto:e.auvaart@gmail.com?Subject=Inquiry%20">e.auvaart@gmail.com</a> </div>
 	  <div class="panel-footer"></div>
 </div>
-<script src="js/bootstrap.js"></script>
+-->
 
+	<!-- Masonry Grid -->
+	<div class="masonry-grid" id="container-b">
+  		<div class="grid-sizer"> </div>
+		<div class= "grid-item-b"> <a href="design/23-yrs-banner.jpg"><img src="design/23-yrs-banner.jpg"/> </a></div>
+		<div class= "grid-item-b"> <a href="design/arts-and-crafts-night-banner.jpg"><img src="design/arts-and-crafts-night-banner.jpg"/> </a></div>
+		<div class= "grid-item-b"> <a href="design/p-plus-r.jpg"><img src="design/p-plus-r.jpg"/> </a></div>
+		<div class= "grid-item-b"> <a href="design/parallel.jpg"><img src="design/parallel.jpg"/> </a></div>
+		<div class= "grid-item-b"> <a href="design/elmnts.jpg"><img src="design/elmnts.jpg"/> </a></div>
+		<div class= "grid-item-b"> <a href="design/expectation.jpg"><img src="design/expectation.jpg"/> </a></div>
+		
+		<div class= "grid-item-b"> <a href="design/network-connect.jpg"><img src="design/network-connect.jpg"/> </a></div>
+		<div class= "grid-item-b"> <a href="design/dive.jpg"><img src="design/dive.jpg"/> </a></div>
+		<div class= "grid-item-b"> <a href="design/levitate.jpg"><img src="design/levitate.jpg"/> </a></div>
+
+		
+		<div class= "grid-item-b"> <a href="design/assumed-constant.jpg"><img src="design/assumed-constant.jpg"/> </a></div>
+		<div class= "grid-item-b"> <a href="design/float.jpg"><img src="design/float.jpg"/> </a></div>
+		<div class= "grid-item-b"> <a href="design/album-glitch.jpg"><img src="design/album-glitch.jpg"/> </a></div>
+<!--
+		<div class= "grid-item"> <a href=""> <img src=""></a></div>
+		<div class= "grid-item"> <a href=""> <img src=""></a></div>
+		<div class= "grid-item"> <a href=""> <img src=""></a></div>
+		<div class= "grid-item"> <a href=""> <img src=""></a></div>
+		<div class= "grid-item"> <a href=""> <img src=""></a></div>
+		<div class= "grid-item"> <a href=""> <img src=""></a></div>
+		<div class= "grid-item"> <a href=""> <img src=""></a></div>
+		<div class= "grid-item"> <a href=""> <img src=""></a></div>
+		<div class= "grid-item"> <a href=""> <img src=""></a></div>
+		<div class= "grid-item"> <a href=""> <img src=""></a></div>
+		<div class= "grid-item"> <a href=""> <img src=""></a></div>
+		<div class= "grid-item"> <a href=""> <img src=""></a></div>
+-->
+  
+</div>	
+		<!-- Masonry Scripts -->
+	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+	<script src ="js/masonry.js"></script>
+
+<!--
 	<script>
 	$(document).ready(function(){
 		
 		var href_v = document.location.href;
 		var lastPathSegment = href_v.substr(href_v.lastIndexOf('/')+1);
 		console.log(lastPathSegment);
-		$("#navbarID > li > a[href$='"+lastPathSegment+"']").parent().addclass('active');
+		$('#navbarID > li > a[href$='"+lastPathSegment+"']').parent().addclass('active');
 	});
 	</script>
+-->
 </body>
 </html>
