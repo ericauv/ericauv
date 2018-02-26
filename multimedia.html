@@ -2,28 +2,25 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>multimedia</title>
-		<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-		<script src="js/jquery-1.11.3.min.js"></script>
-		<!-- Masonry Scripts -->
-	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-	<script src ="js/masonry.js"></script>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+	<script src="js/jquery-1.11.3.min.js"></script>
 	<script src="js/bootstrap.js"></script>
-		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+	
 </head>
 
 <body>
-<!-- implement jquery load nav-bar
-	<div id="nav-bar-load"></div>
-	<script>$("#nav-bar-load").load("index.html #nav-bar");</script>
--->
+
 	<nav class="navbar navbar-default navbar-fixed-top" id="nav-bar">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -42,14 +39,22 @@
   </div>
   <!-- /.container-fluid -->
 </nav>
-	<div class="masonry-grid" id="container-vid">
-		<div class="grid-sizer-vid"> </div>
-		<div class="grid-item-vid"> <video src="multimedia/STR8-OUTTA-MUMBAI.mp4" controls=""></video></div>
-		<div class="grid-item-vid"> <video src="multimedia/good-guy.mp4" controls=""></video></div>
-		<div class="grid-item-vid"> <video src="multimedia/incomplete-kisses.mp4" controls=""></video></div>
-		<div class="grid-item-vid"> <video src="multimedia/wither.mp4" controls=""></video></div>
-		<div class="grid-item-vid"> <video src="multimedia/danny-anime.mp4" controls=""></video></div>
+	
+	<!-- Masonry Grid -->
+	<div class="masonry-grid" id="container-v">
+		<div class="grid-sizer"> </div>
+		<div class="grid-item-v"> <video src="multimedia/winona-hublots.mp4" controls=""></video></div>
+		<div class="grid-item-v"> <video src="multimedia/STR8-OUTTA-MUMBAI.mp4" controls=""></video></div>
+		<div class="grid-item-v"> <video src="multimedia/good-guy.mp4" controls=""></video></div>
+		<div class="grid-item-v"> <video src="multimedia/incomplete-kisses.mp4" controls=""></video></div>
+		<div class="grid-item-v"> <video src="multimedia/wither.mp4" controls=""></video></div>
+		<div class="grid-item-v"> <video src="multimedia/danny-anime.mp4" controls=""></video></div>
+		
 	</div>
+	<!-- Masonry Scripts -->
+	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+	<script src="js/masonry.js"></script>
 	
 </body>
 </html>

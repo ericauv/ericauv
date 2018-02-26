@@ -60,16 +60,7 @@ var $containerB = jQuery('#container-b').masonry({
 			percentposition: true,
 			horizontalOrder: true
 		});
-//------------VIDEO GRID
 
-var $containerVid = jQuery('#container-vid').masonry({
-			//options
-			itemSelector: '.grid-item-vid',
-			columnWidth: '.grid-sizer-vid',
-			percentposition: true,
-			horizontalOrder: true,
-			gutter:10
-		});
 
 //------------- GIFS
 		
@@ -90,7 +81,6 @@ $containerB.imagesLoaded().progress(function() {
 });
 
 
-
 $(document).ready(function(){
 				 $containerB.masonry('layout');
 				  });
@@ -98,7 +88,17 @@ $(document).ready(function(){
 //----------- MULTIMEDIA
 
 		
+var $containerV = jQuery('#container-v').masonry({
+	//options
+	itemSelector: '.grid-item-v',
+	columnWidth: '.grid-sizer',
+	gutter:10,
+	percentposition: true,
+	horizontalOrder: true
+});
 
-$(document).ready(function(){
-				  $containerVid.masonry('layout');
-				  });
+$(window).bind("load", function() {
+	$containerV.masonry('layout');
+});
+		
+	
