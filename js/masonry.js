@@ -97,8 +97,8 @@ var $containerV = jQuery('#container-v').masonry({
 	horizontalOrder: true
 });
 
-$(window).bind("load", function() {
-	$containerV.masonry('layout');
+$(window).load( function(){
+	$containerV.masonry();
 });
 		
 	
