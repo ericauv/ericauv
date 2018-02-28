@@ -18,7 +18,10 @@ body{
 	background-color: #FFF;
 	margin: 0 auto;
 }
-#lastVideo{}
+
+.not-loaded {
+	opacity: 0;
+}
 
 .grid-sizer, .grid-item, .grid-item-v, .grid-item-b{
 	width: 32%;
